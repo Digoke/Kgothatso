@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <div class="nav">
+        <a class="a active" href="#">HOME</a>
+        <a class="b" href="#">ABOUT ME</a>
+        <a class="c" href="#">CAREER</a>
+        <a class="d" href="#">SKILLS</a>
+        <a class="e" href="#">CONTACT ME</a>
+    </div>
+    <div class="content">
+        <div class="home">
+            <h1>I am Kgothatso Mohlala</h1>
+            <h3>Data Analyst| Machine Learning| Python</h3>
+            <button class="button">Download CV</button>
+        </div>
+        <div class="aboutme">
+            <h1>ABORT ME</h1>
+            <br>
+            <h2>
+            She is working as an intern with younglings. The past 6 months she was working as a Data Analyst trainee at Explore Data Science Academy(EDSA)
+            Her hunger for knowledge and determination to turn information into action has contributed to her most recent success at EDSA. She was one of the top 10 performing students. </h2>
+        </div>
+        <div class="career">
+            <h1>CAREER</h1>
+            <br>
+            <div class="edu">
+                <h1>EXPLORE DATA SCIENCE ACADEMY</h1>
+                <h2>Data Analyst Trainee</h2>
+                <h3>2019(Jan-Jun)</h3>
+                <br>
+                <h1>UNIVERSITY OF LIMPOPO</h1>
+                <h2>Bachelor of Science in Life Sciences</h2>
+                <h3>2014-2018</h3>
+                <br>
+                <h1>KGOSHI MOROANGOATO SECONDARY SCHOOL</h1>
+                <h2>Science and Mathematics Stream</h2>
+                <h3>2009-2013</h3>
+            </div>
+
+        </div>
+
+        <div class="skill">
+            <h1>SKILLS</h1>
+            <h1>Programming</h1> 
+            <p>Python, Sklearn/Pandas, Jupyter Notebook, Conda, PostgreSQL, PowerBI</p>
+<h1>Technical</h1>
+<p>Machine Learning Regression, Classification, Data manipulation and visualization (Matplotlib, Seaborn), Dashboard Design for visualization and communication</p>
+<h1>Statistics</h1>
+<p>Probability Theory, Distributions and Hypothesis Testing, Model Evaluation, Bayesian Method
+Professional: Team player, Critical thinker, Hardworker, Problem solver, Creative thinker, Fast learner </p>
+        </div>
+        <div class="contactme">
+            <div class="contactform">
+                <form action="" method="post">
+                    <input type="text" name="" class="inputtext" value="First name">
+                    <input type="text" name="" class="inputtext" value="Last Name">
+                    <input type="text" name="" class="inputtext" value="Your Email">
+                    <textarea cols="4" rows="6" class="inputmessage">Your Message...!!!</textarea>
+                    <input type="button" name="" class="inputbutton" value="submit">
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="JS/jquery-1.11.3%20file.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('a').click(function() {
+                //alert("i am click");
+                var selected = $(this);
+                $('a').removeClass('active');
+                $(selected).addClass('active');
+                $('b').removeClass('active');
+                $(selected).addClass('active');
+                $('c').removeClass('active');
+                $(selected).addClass('active');
+                $('d').removeClass('active');
+                $(selected).addClass('active');
+                $('e').removeClass('active');
+                $(selected).addClass('active');
+            });
+
+            var $a = $('.a');
+            $b = $('.b'),
+                $c = $('.c'),
+                $d = $('.d'),
+                $e = $('.e'),
+                $home = $('.home');
+            $aboutme = $('.aboutme');
+            $career = $('.career');
+            $skill = $('.skill');
+            $contactme = $('.contactme');
+
+            $a.click(function() {
+                $home.fadeIn();
+                $aboutme.fadeOut();
+                $career.fadeOut();
+                $skill.fadeOut();
+                $contactme.fadeOut();
+            });
+            $b.click(function() {
+                $aboutme.fadeIn();
+                $home.fadeOut();
+                $career.fadeOut();
+                $skill.fadeOut();
+                $contactme.fadeOut();
+            });
+            $c.click(function() {
+                $career.fadeIn();
+                $home.fadeOut();
+                $aboutme.fadeOut();
+                $skill.fadeOut();
+                $contactme.fadeOut();
+            });
+        });
+        $d.click(function() {
+            $skill.fadeIn();
+            $home.fadeOut();
+            $aboutme.fadeOut();
+            $career.fadeOut();
+            $contactme.fadeOut();
+        });
+        $e.click(function() {
+            $contactme.fadeIn();
+            $home.fadeOut();
+            $aboutme.fadeOut();
+            $career.fadeOut();
+            $skill.fadeOut();
+        });
+    </script>
+</body>
+</html>
